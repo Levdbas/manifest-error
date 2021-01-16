@@ -1,6 +1,6 @@
 const path = require("path");
 const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
-const WebpackManifestPlugin = require("webpack-manifest-plugin");
+const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 module.exports = {
   entry: { index: path.resolve(__dirname, "src", "index.js") },
   output: {
